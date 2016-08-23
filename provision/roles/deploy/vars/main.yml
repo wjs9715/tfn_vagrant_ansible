@@ -1,0 +1,3 @@
+virtualenv_path_3: /home/django/env/py3
+project_path: /home/django/project/tfn
+requirements_path: /home/django/project

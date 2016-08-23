@@ -1,0 +1,9 @@
+- name: Python3.x virtualenv setup
+  become: yes
+  pip: virtualenv={{ virtualenv_path_3 }} requirements={{ requirements_path }}/requirements.txt virtualenv_python=python3.4 virtualenv_site_packages=yes
+
+- name: Django makemigrations python3.x
+  django_manage: command=makemigrations app_path={{ project_path }} virtualenv={{ virtualenv_path_3 }}
+
+- name: Django migrate python3.x
+  django_manage: command=migrate app_path={{ project_path }} virtualenv={{ virtualenv_path_3 }}
