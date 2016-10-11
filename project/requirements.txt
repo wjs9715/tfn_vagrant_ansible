@@ -1,6 +1,12 @@
 Django
 djangorestframework
+djangorestframework-jwt
 psycopg2
 django-bootstrap3
 numpy
 scipy
+django-cors-middleware
+scikit-learn
+django-oauth-toolkit
+djoser
+convertbng
